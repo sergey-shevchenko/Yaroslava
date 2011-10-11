@@ -60,7 +60,7 @@ body{
 #wrapper {
     width: 1171px;
     margin: 0 auto;
-    background: #fff url('images/bg-spot.png') 0 148px no-repeat;
+    background: #fff url('images/bg-spot.png') 165px 97px no-repeat;
 	overflow: hidden;
 	padding-left: 6px;
 }
@@ -132,6 +132,7 @@ ul.gallery-section li .grey{
     left: 0;
     z-index: 20;
 }
+ul.gallery-section {margin-top: 83px;}
 
 /*menu sections*/
 ul#people{
@@ -221,12 +222,11 @@ ul#t-shirt .title a:hover {background-position: 0 -18px !important;}
     hieght: 204px;
     width: 1165px;
     overflow: hidden;
-	margin-top: 83px;
 }
 .gallery-wrapper .gallery-section {
     hieght: 204px;
-    width: 9999px;
 }
+.gallery-wrapper section { width: 9999px;}
 
 /*carousel*/
 #carousel_ctrl {}
@@ -241,6 +241,59 @@ ul#t-shirt .title a:hover {background-position: 0 -18px !important;}
     height: 25px;
     width: 24px;
 }
+.gallery {width: 99999px;}
 #button_l a {background: url(images/arrow-l.png)}
 #button_r a {background: url(images/arrow-r.png)}
 /*TODO: add hover styles*/
+#gallery-inner {width:auto !important; float: left; height: 287px;}
+
+
+/*footer*/
+footer {
+    clear: both;
+    width: 284px;
+    margin: -35px auto 0;
+    overflow: hidden;
+}
+footer nav {width:104px; margin: 0 auto; overflow: hidden;}
+footer li a {
+    float: left;
+    overflow: hidden;
+    text-indent: -9999px;  
+    background: url(images/menu.png);
+}
+
+footer li a.home{width:35px; height: 12px; margin-right: 10px;}
+footer li a.home:hover{background-position: 0 -12px !important;}
+footer li a.about{background-position: -35px 0 !important;width: 59px; height: 12px;}
+footer li a.about:hover{background-position: -35px -12px !important;}
+footer strong {
+    display: block;
+    clear: both;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 170px;
+    height: 20px;
+    margin: 13px auto 0;
+    background: url(images/pad.png);
+}
+footer em {
+    display: block;
+    overflow: hidden;
+    text-indent: -9999px;
+    width: 283px;
+    height: 15px;
+    margin: 6px auto 0;
+    background: url(images/copy.png);
+}
+#opener {
+    display: block;
+    width: 66px;
+    height: 29px;
+    text-indent: -9999px;
+    background: url(images/eye.png);
+    margin: 0 auto 48px;
+}
+#opener:hover {background-position: 0 -29px !important;}
+#opener.active {background-position: -66px 0 !important;}
+#opener.active:hover {background-position: -66px -29px !important;}
