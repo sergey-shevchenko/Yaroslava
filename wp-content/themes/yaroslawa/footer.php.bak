@@ -9,6 +9,3 @@
     <strong>photo art &amp; design</strong>
     <em>2011-2012 Yaroslawa Kolomiets, All rights reserved</em>
 </footer>
-<?php wp_footer();?>
-</body>
-</html>

@@ -52,7 +52,6 @@
         wp_enqueue_script('yk_main', get_bloginfo('stylesheet_directory').'/js/main.js');
 ?>
     <script src="<?=get_bloginfo('stylesheet_directory')?>/js/main.js"></script>
-	<script src="<?=get_bloginfo('stylesheet_directory')?>/js/thickbox.js"></script>
 </head>
 
 <body <?php body_class(); ?>>

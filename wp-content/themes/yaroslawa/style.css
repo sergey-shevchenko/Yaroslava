@@ -219,7 +219,7 @@ ul#t-shirt .title a:hover {background-position: 0 -18px !important;}
     font-size: 10px;
 }
 .gallery-wrapper {
-    hieght: 204px;
+    height: 350px;
     width: 1165px;
     overflow: hidden;
 }
@@ -297,3 +297,7 @@ footer em {
 #opener:hover {background-position: 0 -29px !important;}
 #opener.active {background-position: -66px 0 !important;}
 #opener.active:hover {background-position: -66px -29px !important;}
+
+img#TB_Image {
+	border: 1px solid #ccc !important;
+}
