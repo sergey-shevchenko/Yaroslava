@@ -11,7 +11,7 @@ function openerInit() {
 	var margins = new Array();
 	var i = 0;
 	jQuery('.gallery-section').each(function(){
-		margins[i]=parseFloat(jQuery(this).css('margin-top'));
+		margins[i]=parseInt(jQuery(this).css('margin-top'));
 		i++;
 	});
 	jQuery('#opener').click(function(){
@@ -53,14 +53,14 @@ function openerInit() {
 function sliderInit() {
 		pages = Math.floor(jQuery('.gallery-wrapper section #gallery-inner').outerWidth()/1170);
 		jQuery('#button_r').click(function(){
-			if(parseFloat(jQuery('.gallery-wrapper #gallery-inner').css('margin-left'))>-1*jQuery('.gallery-wrapper section #gallery-inner').outerWidth()+1170)
+			if(parseInt(jQuery('.gallery-wrapper #gallery-inner').css('margin-left'))>-1*jQuery('.gallery-wrapper section #gallery-inner').outerWidth()+1170)
 				jQuery('.gallery-wrapper #gallery-inner').animate({marginLeft: '-=1170'},'fast',function(){offsetLeft-=1170;});
 			else
 				 jQuery('.gallery-wrapper #gallery-inner').animate({marginLeft: '0'},'fast',function(){offsetLeft=0;});
-			offsetLeft = parseFloat(jQuery('ul.gallery-section').parent('section').css('margin-left'));
+			offsetLeft = parseInt(jQuery('ul.gallery-section').parent('section').css('margin-left'));
 		});    
 		jQuery('#button_l').click(function(){
-			if(parseFloat(jQuery('.gallery-wrapper #gallery-inner').css('margin-left'))<0)
+			if(parseInt(jQuery('.gallery-wrapper #gallery-inner').css('margin-left'))<0)
 				jQuery('.gallery-wrapper #gallery-inner').animate({marginLeft: '+=1170'},'fast',function(){offsetLeft+=1170;});
 			else
 				jQuery('.gallery-wrapper #gallery-inner').animate({marginLeft: -1170*pages},'fast',function(){offsetLeft=-1170*pages});

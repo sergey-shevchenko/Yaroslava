@@ -1,9 +1,9 @@
 <footer>
-    <a href ="#" id="opener">open all</a>
+    <?php if (get_the_ID()!=8){?><a href ="#" id="opener">open all</a><?php }?>
     <nav>
         <ul>
             <li><a href="<?=  get_option('siteurl')?>" class="home">Home</a></li>
-            <li><a href="<?=  get_option('siteurl')?>" class="about">about me</a></li>
+            <li><a href="<?= get_permalink(8)?>" class="about">about me</a></li>
         </ul>
     </nav>
     <strong>photo art &amp; design</strong>

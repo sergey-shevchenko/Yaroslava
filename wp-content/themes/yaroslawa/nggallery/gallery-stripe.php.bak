@@ -38,7 +38,14 @@ Follow variables are useable :
                     <?php if ( !$image->hidden ) { ?>
                         <img class="stripe" src="<?php echo $image->thumbnailURL ?>" title="<?php echo $image->alttext ?>" alt="<?php echo $image->alttext ?>" height="204"/>
                     <?php } ?>
-                        <em class="thumb"><img src="<?php echo $image->imageURL ?>" height="204"/></em>
+                        <?php if ($i <= 39) {?>
+                            <em class="thumb"><img src="<?php echo $image->imageURL ?>" height="204"/></em>
+                        <?php }
+                        else {?>
+                            <em class="thumb"><img src="" height="204"/></em>
+                            <em class="postload"><?php echo $image->imageURL ?></em>
+                        <?php }?>
+?>
                 </a>
             </li>      
  	<?php endforeach; ?>

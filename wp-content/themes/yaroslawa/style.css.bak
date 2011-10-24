@@ -219,14 +219,14 @@ ul#t-shirt .title a:hover {background-position: 0 -18px !important;}
     font-size: 10px;
 }
 .gallery-wrapper {
-    hieght: 350px;
+    height: 350px;
     width: 1165px;
     overflow: hidden;
 }
 .gallery-wrapper .gallery-section {
     hieght: 204px;
 }
-.gallery-wrapper section { width: 9999px;}
+.gallery-wrapper section { width: 19999px;}
 
 /*carousel*/
 #carousel_ctrl {}
@@ -241,7 +241,7 @@ ul#t-shirt .title a:hover {background-position: 0 -18px !important;}
     height: 25px;
     width: 24px;
 }
-.gallery {width: 99999px;}
+.gallery {width: 199999px;}
 #button_l a {background: url(images/arrow-l.png)}
 #button_r a {background: url(images/arrow-r.png)}
 /*TODO: add hover styles*/
@@ -301,3 +301,6 @@ footer em {
 img#TB_Image {
 	border: 1px solid #ccc !important;
 }
+.alignleft {float: left; margin-right:10px;}
+.entry-content p {font: 14px normal; font-family: Tahoma, sans-serif;}
+.entry-content {margin-top: 83px; float: left; width: 800px;}
